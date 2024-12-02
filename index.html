@@ -1,158 +1,88 @@
-/* Reset default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Alpha Threads - Stylish men's clothing to enhance your look.">
+    <title>Alpha Threads - Clothing Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Alpha Threads</h1>
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
-/* Body and main styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #fff;
-    color: #333;
-    line-height: 1.6;
-}
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Alpha Threads</h2>
+            <p>Your style, your way. High-quality men's apparel.</p>
+        </div>
+    </section>
 
-/* Header */
-header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-}
+    <section id="shop" class="products">
+        <h2>Shop Our Collection</h2>
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-}
+        <!-- Product 1: Compression Shirt -->
+        <div class="product-card">
+            <img src="compression-shirt.jpg" alt="Compression Shirt">
+            <h3>Compression Shirt</h3>
+            <p class="price">$35</p>
+            <p>A tight-fitting shirt designed to enhance your physique.</p>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID">
+                <input type="submit" value="Buy Now">
+            </form>
+        </div>
 
-nav .logo h1 {
-    font-size: 24px;
-    margin: 0;
-}
+        <!-- Product 2: Basketball Shorts -->
+        <div class="product-card">
+            <img src="basketball-shorts.jpg" alt="Basketball Shorts">
+            <h3>Basketball Shorts</h3>
+            <p class="price">$25</p>
+            <p>Comfortable shorts for athletic or casual wear.</p>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID">
+                <input type="submit" value="Buy Now">
+            </form>
+        </div>
 
-nav .nav-links ul {
-    list-style-type: none;
-}
+        <!-- Product 3: New Product (T-Shirt) -->
+        <div class="product-card">
+            <img src="t-shirt.jpg" alt="Basic T-Shirt">
+            <h3>Basic T-Shirt</h3>
+            <p class="price">$20</p>
+            <p>A classic and comfortable T-shirt for everyday wear.</p>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="YOUR_BUTTON_ID">
+                <input type="submit" value="Buy Now">
+            </form>
+        </div>
 
-nav .nav-links ul li {
-    display: inline;
-    margin-right: 20px;
-}
+        <!-- Add More Products Here if Needed -->
+    </section>
 
-nav .nav-links ul li a {
-    color: white;
-    text-decoration: none;
-}
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? We’d love to hear from you.</p>
+        <p>Email: <a href="mailto:support@alphathreads.com">support@alphathreads.com</a></p>
+    </section>
 
-nav .nav-links ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Hero Section */
-.hero {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-}
-
-.hero h2 {
-    font-size: 36px;
-}
-
-.hero p {
-    font-size: 18px;
-    margin-top: 20px;
-}
-
-/* Products Section */
-.products {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding: 50px 20px;
-    background-color: #f4f4f4;
-}
-
-.products h2 {
-    font-size: 36px;
-    margin-bottom: 40px;
-    width: 100%;
-    text-align: center;
-}
-
-.product-card {
-    background-color: white;
-    margin: 10px;
-    padding: 20px;
-    width: 250px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-
-.product-card:hover {
-    transform: scale(1.05);
-}
-
-.product-card img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-}
-
-.product-card h3 {
-    font-size: 24px;
-    margin-top: 15px;
-}
-
-.product-card .price {
-    font-size: 20px;
-    color: #27ae60;
-    margin-top: 10px;
-}
-
-.product-card p {
-    font-size: 16px;
-    margin-top: 10px;
-}
-
-.product-card form {
-    margin-top: 15px;
-}
-
-/* Contact Section */
-.contact {
-    background-color: #333;
-    color: white;
-    padding: 50px 20px;
-    text-align: center;
-}
-
-.contact h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.contact a {
-    color: #f4f4f4;
-    text-decoration: none;
-}
-
-.contact a:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
+    <footer>
+        <p>&copy; 2024 Alpha Threads. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
