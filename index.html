@@ -1,137 +1,158 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Alpha Threads - Men's Clothing</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #222;
-            color: #fff;
-            padding: 20px 10px;
-            text-align: center;
-        }
-        header img {
-            max-width: 100px;
-            display: block;
-            margin: 0 auto 10px;
-        }
-        nav {
-            text-align: center;
-            padding: 10px 0;
-        }
-        nav a {
-            margin: 0 15px;
-            color: #fff;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        .container {
-            padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .product {
-            background: #fff;
-            margin: 15px 0;
-            padding: 15px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            display: flex;
-            align-items: center;
-        }
-        .product img {
-            max-width: 150px;
-            margin-right: 20px;
-            border-radius: 5px;
-        }
-        .product h3 {
-            margin: 0;
-            font-size: 1.2rem;
-        }
-        .product p {
-            margin: 5px 0;
-        }
-        .product .price {
-            font-weight: bold;
-            color: #007BFF;
-        }
-        footer {
-            text-align: center;
-            background-color: #222;
-            color: #fff;
-            padding: 10px 0;
-            margin-top: 20px;
-        }
-        button {
-            background-color: #007BFF;
-            color: #fff;
-            border: none;
-            padding: 10px 15px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        button:hover {
-            background-color: #0056b3;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <img src="logo.png" alt="Alpha Threads Logo">
-        <h1>Alpha Threads</h1>
-        <p>Gear Up. Look Sharp.</p>
-        <nav>
-            <a href="#home">Home</a>
-            <a href="#shop">Shop</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+/* Body and main styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.6;
+}
 
-    <div class="container" id="shop">
-        <h2>Shop Our Collection</h2>
+/* Header */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
 
-        <div class="product">
-            <img src="compression-shirt.jpg" alt="Compression Shirt">
-            <div>
-                <h3>Compression Shirt</h3>
-                <p>A tight-fitting shirt designed to enhance a masculine appearance.</p>
-                <p class="price">$35</p>
-                <button>Buy Now</button>
-            </div>
-        </div>
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
 
-        <div class="product">
-            <img src="basketball-shorts.jpg" alt="Basketball Shorts">
-            <div>
-                <h3>Basketball Shorts</h3>
-                <p>Comfortable shorts that provide freedom of movement without tightness.</p>
-                <p class="price">$25</p>
-                <button>Buy Now</button>
-            </div>
-        </div>
+nav .logo h1 {
+    font-size: 24px;
+    margin: 0;
+}
 
-        <div class="product">
-            <img src="athletic-joggers.jpg" alt="Athletic Joggers">
-            <div>
-                <h3>Athletic Joggers</h3>
-                <p>Lightweight joggers with a tapered fit for a sleek look.</p>
-                <p class="price">$40</p>
-                <button>Buy Now</button>
-            </div>
-        </div>
-    </div>
+nav .nav-links ul {
+    list-style-type: none;
+}
 
-    <footer>
-        <p>&copy; 2024 Alpha Threads. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+nav .nav-links ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav .nav-links ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+nav .nav-links ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 36px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Products Section */
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+}
+
+.products h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    width: 100%;
+    text-align: center;
+}
+
+.product-card {
+    background-color: white;
+    margin: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    font-size: 24px;
+    margin-top: 15px;
+}
+
+.product-card .price {
+    font-size: 20px;
+    color: #27ae60;
+    margin-top: 10px;
+}
+
+.product-card p {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.product-card form {
+    margin-top: 15px;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #333;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact a {
+    color: #f4f4f4;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
